@@ -16,10 +16,10 @@ body{
     justify-content: center;
     align-content: center;
     max-height: 100vh;
-    padding-top: 10%;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: minmax(120px, auto)repeat(5,100px);
     grid-gap: 1px;
+    padding-top: 1%;
 }
 
 .calculator-grid > button{
@@ -76,6 +76,7 @@ body{
         grid-template-columns: repeat(4,75px);
         grid-template-rows: minmax(100px, auto)repeat(5,75px);
         grid-gap: 1px;
+        padding-top: 10%;
     }
     
     .calculator-grid > button{
