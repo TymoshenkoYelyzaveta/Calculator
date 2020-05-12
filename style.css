@@ -15,7 +15,8 @@ body{
     display: grid;
     justify-content: center;
     align-content: center;
-    padding: 1em;
+    max-height: 100vh;
+    padding-top: 10%;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: minmax(120px, auto)repeat(5,100px);
     grid-gap: 1px;
@@ -25,7 +26,6 @@ body{
     cursor: pointer;
     font-size: 2rem;
     border: 0;
-    /* border: 1px solid white; */
     outline: 0;
     background: rgba(255,255,255,.75);
 }
@@ -69,4 +69,17 @@ body{
 .output .current-operand{
     color:white;
     font-size: 2.5rem;
+}
+
+@media(max-width:500px){
+    .calculator-grid{
+        grid-template-columns: repeat(4,50px);
+        grid-template-rows: minmax(75px, auto)repeat(5,50px);
+        grid-gap: 1px;
+    }
+    
+    .calculator-grid > button{
+        font-size: 1rem;
+    }
+    
 }
